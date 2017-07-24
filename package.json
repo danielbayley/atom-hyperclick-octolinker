@@ -1,0 +1,139 @@
+{
+  "name": "hyperclick-octolinker",
+  "version": "0.0.0",
+  "description": "The OctoLinker browser extension for Atom.",
+  "keywords": [
+    "octolinker",
+    "npm",
+    "gem",
+    "package",
+    "registry"
+  ],
+  "homepage": "https://atom.io/packages/hyperclick-octolinker",
+  "repository": "danielbayley/atom-hyperclick-octolinker",
+  "bugs": "https://github.com/danielbayley/atom-hyperclick-octolinker/issues",
+  "author": "Daniel Bayley <daniel.bayley@me.com> (https://github.com/danielbayley)",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "coffeelint": "^1.16.0",
+    "coffeescope2": "^0.4.5",
+    "coffeescript": "2.0.0-beta3",
+    "husky": "^0.14.3"
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.6.0",
+    "live-resolver": "git+https://github.com/OctoLinker/live-resolver.git"
+  },
+  "package-deps": [
+    "hyperclick"
+  ],
+  "engines": {
+    "atom": ">=1.4.0 <2.0.0"
+  },
+  "providedServices": {
+    "hyperclick": {
+      "versions": {
+        "0.1.0": "octolink"
+      }
+    }
+  },
+  "config": {
+    "registry": {
+      "source.json": "npm",
+      "source.js": "npm",
+      "source.coffee": "npm",
+      "source.ruby": "rubygems",
+      "source.ruby.rails": "rubygems",
+      "source.python": "pypi"
+    }
+  },
+  "scripts": {
+    "test": "coffeelint index.coffee",
+    "precommit": "npm test"
+  },
+  "coffeelintConfig": {
+    "arrow_spacing": {
+      "level": "error"
+    },
+    "max_line_length": {
+      "level": "warn",
+      "limitComments": false
+    },
+    "line_endings": {
+      "level": "error"
+    },
+    "colon_assignment_spacing": {
+      "level": "error",
+      "spacing": {
+        "left": 0,
+        "right": 1
+      }
+    },
+    "no_throwing_strings": {
+      "level": "warn"
+    },
+    "no_backticks": {
+      "level": "warn"
+    },
+    "no_empty_param_list": {
+      "level": "error"
+    },
+    "no_stand_alone_at": {
+      "level": "error"
+    },
+    "space_operators": {
+      "level": "warn"
+    },
+    "cyclomatic_complexity": {
+      "level": "warn"
+    },
+    "no_unnecessary_fat_arrows": {
+      "level": "ignore"
+    },
+    "missing_fat_arrows": {
+      "level": "warn",
+      "is_strict": true
+    },
+    "no_debugger": {
+      "console": true
+    },
+    "no_interpolation_in_single_quotes": {
+      "level": "error"
+    },
+    "no_empty_functions": {
+      "level": "error"
+    },
+    "prefer_english_operator": {
+      "level": "error"
+    },
+    "spacing_after_comma": {
+      "level": "warn"
+    },
+    "ensure_comprehensions": {
+      "level": "ignore"
+    },
+    "no_this": {
+      "level": "error"
+    },
+    "eol_last": {
+      "level": "error"
+    },
+    "no_private_function_fat_arrows": {
+      "level": "ignore"
+    },
+    "check_scope": {
+      "module": "coffeescope2",
+      "level": "warn",
+      "environments": [
+        "es6",
+        "node",
+        "atomtest"
+      ],
+      "globals": {
+        "atom": false
+      },
+      "hoist_local": false
+    }
+  }
+}
