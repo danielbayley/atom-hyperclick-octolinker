@@ -5,6 +5,8 @@
 =====================
 The _[OctoLinker]_ browser extension for [Atom].
 
+![img](http://octolinker.github.io/img/video-base.png)
+
 [Another] plugin for _[hyperclick]_.
 
 Install
@@ -20,7 +22,7 @@ License
 
 [atom]:             https://atom.io
 [apm]:              https://img.shields.io/apm/v/hyperclick-octolinker.svg?style=flat-square
-[package]:          hyperclick-octolinker
+[package]:          https://atom.io/packages/hyperclick-octolinker
 [chat]:             https://img.shields.io/badge/chat-atom.io%20slack-ff69b4.svg?style=flat-square
 [#slack]:           https://atom-slack.herokuapp.com
 
