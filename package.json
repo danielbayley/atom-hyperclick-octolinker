@@ -6,7 +6,7 @@
     "octolinker",
     "npm",
     "gem",
-    "package",
+    "pip",
     "registry"
   ],
   "homepage": "https://atom.io/packages/hyperclick-octolinker",

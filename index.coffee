@@ -39,4 +39,4 @@ octolink = ->
         .catch atom.notifications.addError
 
 #-------------------------------------------------------------------------------
-module.exports = { config, activate, octolink }
+module.exports = {config, activate, octolink}
