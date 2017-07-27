@@ -1,6 +1,6 @@
 {
   "name": "hyperclick-octolinker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The OctoLinker browser extension for Atom.",
   "keywords": [
     "octolinker",
