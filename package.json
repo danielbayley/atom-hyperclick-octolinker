@@ -22,8 +22,7 @@
     "husky": "^0.14.3"
   },
   "dependencies": {
-    "atom-package-deps": "^4.6.0",
-    "live-resolver": "git+https://github.com/OctoLinker/live-resolver.git"
+    "atom-package-deps": "^4.6.0"
   },
   "package-deps": [
     "hyperclick"
@@ -133,6 +132,7 @@
       "globals": {
         "atom": false
       },
+      "overwrite": false,
       "hoist_local": false
     }
   }
