@@ -27,7 +27,7 @@ octolink = ->
   providerName: name
   priority: 1
   grammarScopes: Object.keys config?.registry
-  wordRegExp: /\b[.\w_-]+(?=['"`:])/g
+  wordRegExp: /// (@[.\w_-]+/)? \b[.\w_-]+(?=['"`:]) ///g
 
   getSuggestionForWord: (editor, module, range) ->
     {scopeName} = editor.getGrammar()
